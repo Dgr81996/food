@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>Checkout page</h1>
+    <form>
+      <input class="email" type="text" placeholder="Enter  address" />
+      
+      <input type="submit" value="Submit" />
+    </form>
+  </body>
+</html>
+
+<script>
+  document.querySelector("form").addEventListener("submit", formSubmit);
+ 
+  function formSubmit(event) {
+    event.preventDefault();
+    setTimeout(function(){
+alert('order accepted')
+},2000)
+
+setTimeout(function(){
+alert('order being cooked ')
+},1000)
+
+setTimeout(function(){
+alert('order getting ready ')
+},1000)
+
+setTimeout(function(){
+alert('order deliverd ')
+},1000)
+    
+    
+    
+   
+  }
+</script>
